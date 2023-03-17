@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Mar 15 19:22:52 2023
+# Process ID: 16848
+# Current directory: G:/Root/Core/Digital_Logic_Experiments/lab03/lab03.runs/synth_1
+# Command line: vivado.exe -log ALU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU.tcl
+# Log file: G:/Root/Core/Digital_Logic_Experiments/lab03/lab03.runs/synth_1/ALU.vds
+# Journal file: G:/Root/Core/Digital_Logic_Experiments/lab03/lab03.runs/synth_1\vivado.jou
+# Running On: DESKTOP-RSF5MMH, OS: Windows, CPU Frequency: 1997 MHz, CPU Physical cores: 4, Host memory: 16970 MB
+#-----------------------------------------------------------
+source ALU.tcl -notrace

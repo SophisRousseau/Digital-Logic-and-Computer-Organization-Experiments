@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Mar 14 12:19:17 2023
+# Process ID: 2952
+# Current directory: G:/Root/Core/Digital_Logic_Experiments/lab01/lab01.runs/impl_1
+# Command line: vivado.exe -log mux41.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mux41.tcl -notrace
+# Log file: G:/Root/Core/Digital_Logic_Experiments/lab01/lab01.runs/impl_1/mux41.vdi
+# Journal file: G:/Root/Core/Digital_Logic_Experiments/lab01/lab01.runs/impl_1\vivado.jou
+# Running On: DESKTOP-RSF5MMH, OS: Windows, CPU Frequency: 1997 MHz, CPU Physical cores: 4, Host memory: 16970 MB
+#-----------------------------------------------------------
+source mux41.tcl -notrace

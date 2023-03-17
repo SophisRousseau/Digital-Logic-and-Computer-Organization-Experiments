@@ -1,0 +1,11 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
+G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.srcs/sim_1/new/timer_test.v,1678875402,verilog,,,,Counter_test,,,,,,,,
+G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.srcs/sources_1/new/bcd7seg.v,1678874087,verilog,,G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.srcs/sources_1/new/counter.v,,bcd7seg,,,,,,,,
+G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.srcs/sources_1/new/counter.v,1678872890,verilog,,G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.srcs/sim_1/new/timer_test.v,,Counter,,,,,,,,
+G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.srcs/sources_1/new/divider.v,1678872871,verilog,,G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.srcs/sources_1/new/select_seg.v,,Divider,,,,,,,,
+G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.srcs/sources_1/new/select_seg.v,1678872959,verilog,,G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.srcs/sources_1/new/timer.v,,SelectSeg,,,,,,,,
+G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.srcs/sources_1/new/timer.v,1678874763,verilog,,G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.srcs/sim_1/new/timer_test.v,,Timer,,,,,,,,

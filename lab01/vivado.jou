@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Mar 14 12:15:31 2023
+# Process ID: 672
+# Current directory: G:/Root/Core/Digital_Logic_Experiments/lab01
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20468 G:\Root\Core\Digital_Logic_Experiments\lab01\lab01.xpr
+# Log file: G:/Root/Core/Digital_Logic_Experiments/lab01/vivado.log
+# Journal file: G:/Root/Core/Digital_Logic_Experiments/lab01\vivado.jou
+# Running On: DESKTOP-RSF5MMH, OS: Windows, CPU Frequency: 1997 MHz, CPU Physical cores: 4, Host memory: 16970 MB
+#-----------------------------------------------------------
+start_gui
+oopen_project G:/Root/Core/Digital_Logic_Experiments/lab01/lab01.xpruupdate_compile_order -fileset sources_1
