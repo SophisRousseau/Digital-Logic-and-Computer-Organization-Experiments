@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1678767481">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1679231934">
   <File Type="ROUTE-PWR" Name="mux41_power_routed.rpt"/>
   <File Type="PA-TCL" Name="mux41.tcl"/>
   <File Type="BITSTR-MMI" Name="mux41.mmi"/>
