@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Wed Mar 29 18:50:13 2023
+| Date         : Thu Mar 30 13:30:15 2023
 | Host         : DESKTOP-RSF5MMH running 64-bit major release  (build 9200)
 | Command      : report_drc -file ElectronicClock_drc_routed.rpt -pb ElectronicClock_drc_routed.pb -rpx ElectronicClock_drc_routed.rpx
 | Design       : ElectronicClock
@@ -24,13 +24,13 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 3
+             Violations found: 5
 +-------------+----------+-------------------------------------------------------------+------------+
 | Rule        | Severity | Description                                                 | Violations |
 +-------------+----------+-------------------------------------------------------------+------------+
 | CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties         | 1          |
-| PDRC-153    | Warning  | Gated clock check                                           | 1          |
-| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
+| PDRC-153    | Warning  | Gated clock check                                           | 2          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 2          |
 +-------------+----------+-------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -50,12 +50,24 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net debounce5/btn[0] is a gated clock net sourced by a combinational pin debounce5/outp/O, cell debounce5/outp. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net debounce5/btn[0] is a gated clock net sourced by a combinational pin debounce5/hour_alarm[4]_i_3/O, cell debounce5/hour_alarm[4]_i_3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net debounce5/btn[1] is a gated clock net sourced by a combinational pin debounce5/run_i_2/O, cell debounce5/run_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT debounce5/outp is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+A LUT debounce5/hour_alarm[4]_i_3 is driving clock pin of 5 cells. This could lead to large hold time violations. Involved cells are:
+hour_alarm_reg[0], hour_alarm_reg[1], hour_alarm_reg[2], hour_alarm_reg[3]
+hour_alarm_reg[4]
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT debounce5/run_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
 stopwatch_counter/run_reg
 Related violations: <none>
 

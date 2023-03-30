@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/Documents/Digital_Logic_Experiments/lab04_2/lab04_2.srcs/constrs_1/new/nexysa7.xdc rfile:../../../lab04_2.srcs/constrs_1/new/nexysa7.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.srcs/constrs_1/new/nexysa7.xdc} rfile:../../../lab04_2.srcs/constrs_1/new/nexysa7.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN J15 IOSTANDARD LVCMOS33 } [get_ports { SW[0] }];
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]

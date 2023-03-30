@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Mar 30 13:04:41 2023
+# Process ID: 3920
+# Current directory: D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14532 D:\Documents\Repositories\My Repositories\Digital-Logic-and-Computer-Organization-Experiments\lab04_2\lab04_2.xpr
+# Log file: D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/vivado.log
+# Journal file: D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2\vivado.jou
+# Running On: DESKTOP-RSF5MMH, OS: Windows, CPU Frequency: 1997 MHz, CPU Physical cores: 4, Host memory: 16970 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.xpr}
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.runs/impl_1/ElectronicClock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+export_ip_user_files -of_objects  [get_files {{D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.srcs/utils_1/imports/synth_1/ElectronicClock.dcp}}] -no_script -reset -force -quiet
+remove_files  -fileset utils_1 {{D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.srcs/utils_1/imports/synth_1/ElectronicClock.dcp}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.runs/impl_1/ElectronicClock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files {{D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.srcs/utils_1/imports/synth_1/ElectronicClock.dcp}}] -no_script -reset -force -quiet
+remove_files  -fileset utils_1 {{D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.srcs/utils_1/imports/synth_1/ElectronicClock.dcp}}
+file delete -force {D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.srcs/utils_1/imports/synth_1/ElectronicClock.dcp}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.runs/impl_1/ElectronicClock.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

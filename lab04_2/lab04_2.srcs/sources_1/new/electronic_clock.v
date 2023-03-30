@@ -17,14 +17,17 @@ module ElectronicClock(
 
     wire [1:0] state;
     
-    wire [31:0] hour_count;
-    wire [31:0] minute_count;
-    wire [31:0] second_count;
+    wire [5:0] hour_count;
+    wire [5:0] minute_count;
+    wire [5:0] second_count;
     
     wire [31:0] stopwatch_count;
     
-    wire [31:0] hour_alarm=0;
-    wire [31:0] minute_alarm=0;
+    reg [5:0] hour_alarm=0;
+    reg [5:0] minute_alarm=0;
+    
+    reg [5:0] hour_adjust=0;
+    reg [5:0] minute_adjust=0;
     
     wire CLK1HZ;
     wire CLK100HZ;
@@ -40,9 +43,9 @@ module ElectronicClock(
     
     Debounce5 debounce5(BTN[4:0], CLK100MHZ, 0, btn[4:0]);
     
-    Counter second_counter(CLK1HZ, 0, state, 1, 0, 60, second_count, rco[0]);
-    Counter minute_counter(rco[0], 0, state, 1, 0, 60, minute_count, rco[1]);
-    Counter hour_counter(rco[1], 0, state, 1, 0, 24, hour_count, rco[2]);
+    Counter second_counter(CLK1HZ, 0, state, 1, 0, 60, {26'b0, second_count}, rco[0]);
+    Counter minute_counter(rco[0], 0, state, 1, 0, 60, {26'b0, minute_count}, rco[1]);
+    Counter hour_counter(rco[1], 0, state, 1, 0, 24, {26'b0, hour_count}, rco[2]);
     
     Counter stopwatch_counter(CLK100HZ, 3, state, btn[1], btn[0], 24*60*60*100, stopwatch_count, rco[3]);
     
@@ -54,8 +57,18 @@ module ElectronicClock(
     
     assign LED[0] = hour_alarm==hour_count && minute_alarm==minute_count;
     
-    
-    Alarm alarm(BTN[4:0], state, hour_count, minute_count, hour_alarm, minute_alarm);
+    always @(posedge btn[0] or posedge btn[1]) begin
+        case(state)
+        2: begin
+            if(btn[1]==1) hour_alarm <= (hour_alarm + 1)%24;
+            else if(btn[3]==1) hour_alarm <= (hour_alarm - 1)%24;
+//            else if(btn[2]==1)
+//                minute_alarm <= (minute_alarm + 1)%60;
+//            else if(btn[4]==1)
+//                minute_alarm <= (minute_alarm - 1)%60;
+        end
+        endcase
+    end 
     
     always @(*) begin
         case(state)

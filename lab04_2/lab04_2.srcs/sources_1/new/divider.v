@@ -22,7 +22,7 @@
 
 module Divider (   
      input clk,
-     input [32:0] clk_freq,
+     input [31:0] clk_freq,
 	 output reg clk_1s
 );
 

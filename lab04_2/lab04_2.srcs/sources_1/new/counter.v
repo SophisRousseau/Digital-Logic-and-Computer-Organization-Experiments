@@ -47,7 +47,7 @@ module Counter(
     end
     
     always @(posedge rst or posedge en) begin
-        if(legal_state==current_state) begin
+        if(legal_state!=current_state) begin
             if(rst==1) run<=0;
             else if(en==1) run<=~run;
         end     

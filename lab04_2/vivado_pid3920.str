@@ -1,0 +1,744 @@
+/*
+
+Xilinx Vivado v2022.1 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3526262 on Mon Apr 18 15:48:16 MDT 2022
+IP Build: 3524634 on Mon Apr 18 20:55:01 MDT 2022
+
+Process ID (PID): 3920
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Mar 30 13:04:57 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 2560x1600
+Screen resolution (DPI): 200
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=24
+Scale size: 48
+
+Java version: 	11.0.11 64-bit
+Java home: 	D:/Software/Vivado/2022.1/tps/win64/jre11.0.11_9
+Java executable: 	D:/Software/Vivado/2022.1/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Sophie
+User home directory: C:/Users/Sophie
+User working directory: D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Software/Vivado
+HDI_APPROOT: D:/Software/Vivado/2022.1
+RDI_DATADIR: D:/Software/Vivado/2022.1/data
+RDI_BINDIR: D:/Software/Vivado/2022.1/bin
+
+Vivado preferences file: C:/Users/Sophie/AppData/Roaming/Xilinx/Vivado/2022.1/vivado.xml
+Vivado preferences directory: C:/Users/Sophie/AppData/Roaming/Xilinx/Vivado/2022.1/
+Vivado layouts directory: C:/Users/Sophie/AppData/Roaming/Xilinx/Vivado/2022.1/data/layouts
+PlanAhead jar file: 	D:/Software/Vivado/2022.1/lib/classes/planAhead.jar
+Vivado log file: 	D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/vivado.log
+Vivado journal file: 	D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/vivado.jou
+Engine tmp dir: 	D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/.Xil/Vivado-3920-DESKTOP-RSF5MMH
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Software/Vivado/2022.1/ids_lite/ISE
+XILINX_DSP: D:/Software/Vivado/2022.1/ids_lite/ISE
+XILINX_HLS: D:/Software/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: D:/Software/Vivado/2022.1
+XILINX_VIVADO: D:/Software/Vivado/2022.1
+XILINX_VIVADO_HLS: D:/Software/Vivado/2022.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,438 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 90 MB (+91898kb) [00:00:09]
+// [Engine Memory]: 1,438 MB (+1355926kb) [00:00:09]
+// Opening Vivado Project: D:\Documents\Repositories\My Repositories\Digital-Logic-and-Computer-Organization-Experiments\lab04_2\lab04_2.xpr. Version: Vivado v2022.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project {D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.xpr} 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,438 MB. GUI used memory: 71 MB. Current time: 3/30/23, 1:04:58 PM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/Documents/Digital_Logic_Experiments/lab04_2' since last save. INFO: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.gen/sources_1', nor could it be found using path 'D:/Documents/Digital_Logic_Experiments/lab04_2/lab04_2.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 120 MB (+27030kb) [00:00:17]
+// WARNING: HEventQueue.dispatchEvent() is taking  4162 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Software/Vivado/2022.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:11 . Memory (MB): peak = 1638.430 ; gain = 0.000 
+// Project name: lab04_2; location: D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bA
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (electronic_clock.v) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ElectronicClock (electronic_clock.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ElectronicClock (electronic_clock.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1463 ms.
+// [GUI Memory]: 148 MB (+22669kb) [00:00:31]
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bA
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ar
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2022.1   **** Build date : Apr 18 2022 at 16:02:36     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // j
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.1.0   ****** Build date   : Apr 13 2022-03:12:08     **** Build number : 2022.1.1649790728       ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1638.430 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B61CCEA 
+// Tcl Message: ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292B61CCEA. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-register this hardware target. 
+// Tcl Message: ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.  
+dismissDialog("Auto Connect"); // bA
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+selectCodeEditor("electronic_clock.v", 88, 709); // be
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  7811 ms.
+// [Engine Memory]: 3,460 MB (+2045045kb) [00:00:58]
+// Elapsed time: 10 seconds
+selectCodeEditor("electronic_clock.v", 199, 367); // be
+// HMemoryUtils.trashcanNow. Engine heap size: 3,463 MB. GUI used memory: 95 MB. Current time: 3/30/23, 1:05:43 PM CST
+selectCodeEditor("electronic_clock.v", 334, 354); // be
+selectCodeEditor("electronic_clock.v", 241, 548); // be
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (1) ; Connected", 0, "localhost (1)", 0, true); // t - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "XADC ; ", 3, (String) null, 1, false); // t
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (1) ; Connected", 0, "localhost (1)", 0, true, false, false, false, true, false); // t - Popup Trigger - Node
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.runs/impl_1/ElectronicClock.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// RDIResource.RDIViews_PROPERTIES: Hardware Device Properties: close view
+// Elapsed time: 40 seconds
+selectCodeEditor("electronic_clock.v", 358, 794); // be
+selectCodeEditor("electronic_clock.v", 385, 837); // be
+unMinimizeFrame(PAResourceOtoP.PAViews_HARDWARE, "Hardware"); // aA
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (1) ; Connected", 0, "localhost (1)", 0, true); // t - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true, false, false, false, false, true); // n - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ElectronicClock (electronic_clock.v), alarm : Alarm (alarm.v)]", 10, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ElectronicClock (electronic_clock.v), alarm : Alarm (alarm.v)]", 10, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1254 ms.
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("alarm.v", 157, 868); // be
+selectCodeEditor("alarm.v", 106, 371); // be
+selectCodeEditor("alarm.v", 55, 274); // be
+selectCodeEditor("alarm.v", 51, 274); // be
+typeControlKey((HResource) null, "alarm.v", 'c'); // be
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // D
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "electronic_clock.v", 1); // m
+selectCodeEditor("electronic_clock.v", 67, 665); // be
+selectCodeEditor("electronic_clock.v", 37, 632); // be
+typeControlKey((HResource) null, "electronic_clock.v", 'v'); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("electronic_clock.v", 252, 526); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 18 seconds
+selectCodeEditor("electronic_clock.v", 262, 482); // be
+selectCodeEditor("electronic_clock.v", 636, 642); // be
+selectCodeEditor("electronic_clock.v", 367, 639); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 157 MB (+1867kb) [00:03:01]
+// Elapsed time: 13 seconds
+selectCodeEditor("electronic_clock.v", 582, 313); // be
+selectCodeEditor("electronic_clock.v", 582, 313, false, false, false, false, true); // be - Double Click
+selectCodeEditor("electronic_clock.v", 230, 624); // be
+selectCodeEditor("electronic_clock.v", 230, 624, false, false, false, false, true); // be - Double Click
+selectCodeEditor("electronic_clock.v", 161, 405); // be
+selectCodeEditor("electronic_clock.v", 77, 378); // be
+selectCodeEditor("electronic_clock.v", 77, 378, false, false, false, true, false); // be - Popup Trigger
+selectMenu(RDIResource.HCodeEditor_BLANK_OPERATIONS, "Blank Operations"); // aj
+selectCodeEditor("electronic_clock.v", 56, 370); // be
+selectCodeEditor("electronic_clock.v", 57, 370, false, false, false, true, false); // be - Popup Trigger
+selectMenuItem(PAResourceOtoP.PACodeEditor_GOTO_DEFINITION, "Go to Definition"); // ar
+// WARNING: HEventQueue.dispatchEvent() is taking  1246 ms.
+selectCodeEditor("divider.v", 161, 345); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("divider.v", 644, 317); // be
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alarm.v", 2); // m
+selectCodeEditor("alarm.v", 347, 303); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("alarm.v", 222, 303); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "electronic_clock.v", 1); // m
+selectCodeEditor("electronic_clock.v", 266, 189); // be
+selectCodeEditor("electronic_clock.v", 131, 276); // be
+selectCodeEditor("electronic_clock.v", 131, 276, false, false, false, false, true); // be - Double Click
+selectCodeEditor("electronic_clock.v", 131, 276); // be
+selectCodeEditor("electronic_clock.v", 132, 276); // be
+selectCodeEditor("electronic_clock.v", 132, 276, false, false, false, false, true); // be - Double Click
+selectCodeEditor("electronic_clock.v", 138, 322); // be
+selectCodeEditor("electronic_clock.v", 138, 322, false, false, false, false, true); // be - Double Click
+selectCodeEditor("electronic_clock.v", 145, 306); // be
+selectCodeEditor("electronic_clock.v", 143, 314); // be
+selectCodeEditor("electronic_clock.v", 137, 342); // be
+selectCodeEditor("electronic_clock.v", 137, 342, false, false, false, false, true); // be - Double Click
+selectCodeEditor("electronic_clock.v", 132, 477); // be
+selectCodeEditor("electronic_clock.v", 132, 477, false, false, false, false, true); // be - Double Click
+selectCodeEditor("electronic_clock.v", 132, 523); // be
+selectCodeEditor("electronic_clock.v", 132, 523, false, false, false, false, true); // be - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("electronic_clock.v", 385, 796); // be
+selectCodeEditor("electronic_clock.v", 657, 562); // be
+selectCodeEditor("electronic_clock.v", 681, 556); // be
+selectCodeEditor("electronic_clock.v", 681, 556, false, false, false, false, true); // be - Double Click
+selectCodeEditor("electronic_clock.v", 680, 594); // be
+selectCodeEditor("electronic_clock.v", 680, 594, false, false, false, false, true); // be - Double Click
+selectCodeEditor("electronic_clock.v", 660, 561); // be
+// HMemoryUtils.trashcanNow. Engine heap size: 3,509 MB. GUI used memory: 100 MB. Current time: 3/30/23, 1:09:08 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 27 seconds
+selectCodeEditor("electronic_clock.v", 981, 399); // be
+selectCodeEditor("electronic_clock.v", 1071, 656); // be
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("electronic_clock.v", 668, 680); // be
+selectCodeEditor("electronic_clock.v", 313, 394); // be
+selectCodeEditor("electronic_clock.v", 661, 774); // be
+selectCodeEditor("electronic_clock.v", 282, 478); // be
+selectCodeEditor("electronic_clock.v", 191, 483); // be
+selectCodeEditor("electronic_clock.v", 291, 489); // be
+selectCodeEditor("electronic_clock.v", 190, 516); // be
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("electronic_clock.v", 409, 775); // be
+selectCodeEditor("electronic_clock.v", 450, 893); // be
+selectCodeEditor("electronic_clock.v", 303, 193); // be
+selectCodeEditor("electronic_clock.v", 514, 193); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("electronic_clock.v", 155, 352); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("electronic_clock.v", 300, 620); // be
+selectCodeEditor("electronic_clock.v", 220, 318); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("electronic_clock.v", 337, 701); // be
+selectCodeEditor("electronic_clock.v", 195, 773); // be
+// Elapsed time: 16 seconds
+selectCodeEditor("electronic_clock.v", 173, 432); // be
+selectCodeEditor("electronic_clock.v", 173, 432, false, false, false, false, true); // be - Double Click
+selectCodeEditor("electronic_clock.v", 829, 290); // be
+selectCodeEditor("electronic_clock.v", 493, 529); // be
+selectCodeEditor("electronic_clock.v", 499, 561); // be
+selectCodeEditor("electronic_clock.v", 877, 484); // be
+selectCodeEditor("electronic_clock.v", 780, 338); // be
+selectCodeEditor("electronic_clock.v", 823, 274); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("electronic_clock.v", 491, 702); // be
+selectCodeEditor("electronic_clock.v", 445, 427); // be
+// Elapsed time: 15 seconds
+selectCodeEditor("electronic_clock.v", 78, 417); // be
+selectCodeEditor("electronic_clock.v", 78, 417, false, false, false, true, false); // be - Popup Trigger
+selectCodeEditor("electronic_clock.v", 54, 430); // be
+selectCodeEditor("electronic_clock.v", 56, 423); // be
+selectCodeEditor("electronic_clock.v", 56, 423, false, false, false, true, false); // be - Popup Trigger
+selectMenuItem(PAResourceOtoP.PACodeEditor_GOTO_DEFINITION, "Go to Definition"); // ar
+// WARNING: HEventQueue.dispatchEvent() is taking  1313 ms.
+selectCodeEditor("counter.v", 152, 761); // be
+selectCodeEditor("counter.v", 219, 874); // be
+// Elapsed time: 13 seconds
+selectCodeEditor("counter.v", 562, 582); // be
+selectCodeEditor("counter.v", 272, 593); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 16, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.srcs/utils_1/imports/synth_1/ElectronicClock.dcp with file D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.runs/synth_1/ElectronicClock.dcp 
+// 'cW' command handler elapsed time: 3 seconds
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Mar 30 13:12:00 2023] Launched synth_1... Run output will be captured here: D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.runs/synth_1/runme.log [Thu Mar 30 13:12:00 2023] Launched impl_1... Run output will be captured here: D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 17 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Synthesis Failed"); // ag
+// Elapsed time: 15 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-165] Too many positional options when parsing 'Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.srcs/utils_1/imports/synth_1/ElectronicClock.dcp', please type 'read_checkpoint -help' for usage info.. ]", 4, false); // ah
+// Elapsed time: 33 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 10, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Thu Mar 30 13:13:09 2023] Launched synth_1... Run output will be captured here: D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // ao
+selectMenuItem(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "G:/Root/Core/Digital_Logic_Experiments/lab05/lab05.xpr"); // ar
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aj
+// HOptionPane Error: 'Can't open project 'lab05'. Please verify that the project still exists. (Open Project)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aj
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aj
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ao
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aj
+selectCodeEditor("counter.v", 513, 325); // be
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+// HMemoryUtils.trashcanNow. Engine heap size: 3,530 MB. GUI used memory: 101 MB. Current time: 3/30/23, 1:13:28 PM CST
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-165] Too many positional options when parsing 'Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.srcs/utils_1/imports/synth_1/ElectronicClock.dcp', please type 'read_checkpoint -help' for usage info.. ]", 4, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-165] Too many positional options when parsing 'Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.srcs/utils_1/imports/synth_1/ElectronicClock.dcp', please type 'read_checkpoint -help' for usage info.. ]", 4, false, false, false, false, false, true); // ah - Double Click
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-165] Too many positional options when parsing 'Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.srcs/utils_1/imports/synth_1/ElectronicClock.dcp', please type 'read_checkpoint -help' for usage info.. ]", 4, false, false, false, false, true, false); // ah - Popup Trigger
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // ao
+// Elapsed time: 20 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // i
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, electronic_clock.v]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced]", 9, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced]", 9, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced]", 9, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced]", 9, true, false, false, false, false, true); // D - Double Click - Node
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 2); // i
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // i
+unMinimizeFrame(RDIResource.RDIViews_PROPERTIES, "Source File Properties"); // aA
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ElectronicClock (electronic_clock.v), divider2 : Divider (divider.v)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ElectronicClock (electronic_clock.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 23, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources, utils_1, Design Checkpoint, ElectronicClock.dcp]", 26, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources, utils_1, Design Checkpoint, ElectronicClock.dcp]", 26, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources, utils_1, Design Checkpoint, ElectronicClock.dcp]", 26, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ar
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.srcs/utils_1/imports/synth_1/ElectronicClock.dcp}}] -no_script -reset -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset utils_1 {{D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.srcs/utils_1/imports/synth_1/ElectronicClock.dcp}} 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 23, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("CANCEL", "Cancel"); // JButton
+dismissDialog("Add Sources"); // c
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources, utils_1]", 24, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources, utils_1]", 24, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 16, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Mar 30 13:14:49 2023] Launched synth_1... Run output will be captured here: D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.runs/synth_1/runme.log [Thu Mar 30 13:14:49 2023] Launched impl_1... Run output will be captured here: D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 33 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "electronic_clock.v", 1); // m
+selectCodeEditor("electronic_clock.v", 182, 223); // be
+selectCodeEditor("electronic_clock.v", 359, 233); // be
+selectCodeEditor("electronic_clock.v", 360, 232, false, false, false, false, true); // be - Double Click
+selectCodeEditor("electronic_clock.v", 89, 193); // be
+selectCodeEditor("electronic_clock.v", 89, 193, false, false, false, false, true); // be - Double Click
+selectCodeEditor("electronic_clock.v", 90, 240); // be
+selectCodeEditor("electronic_clock.v", 90, 240, false, false, false, false, true); // be - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 16, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Mar 30 13:15:55 2023] Launched synth_1... Run output will be captured here: D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.runs/synth_1/runme.log [Thu Mar 30 13:15:55 2023] Launched impl_1... Run output will be captured here: D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 121 seconds
+selectCodeEditor("electronic_clock.v", 124, 615); // be
+typeControlKey((HResource) null, "electronic_clock.v", 'c'); // be
+selectCodeEditor("electronic_clock.v", 124, 674); // be
+// Elapsed time: 36 seconds
+selectCodeEditor("electronic_clock.v", 415, 459); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 322 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+selectButton(PAResourceQtoS.StaleRunDialog_YES, "Yes"); // a
+dismissDialog("Implementation is Out-of-date"); // cj
+// Tcl Message: open_run impl_1 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// 'eq' command handler elapsed time: 5 seconds
+// [Engine Memory]: 3,832 MB (+208385kb) [00:19:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,859 MB. GUI used memory: 103 MB. Current time: 3/30/23, 1:24:08 PM CST
+// Elapsed time: 14 seconds
+selectCodeEditor("electronic_clock.v", 97, 464); // be
+selectCodeEditor("electronic_clock.v", 97, 464, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "electronic_clock.v", 'c'); // be
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 4,521 MB. GUI used memory: 103 MB. Current time: 3/30/23, 1:24:19 PM CST
+// [Engine Memory]: 4,521 MB (+522395kb) [00:19:35]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1.4s
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2493 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 4065.293 ; gain = 4.520 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 873 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2022.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.345 . Memory (MB): peak = 4753.977 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.346 . Memory (MB): peak = 4753.977 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 4753.977 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// [GUI Memory]: 176 MB (+11103kb) [00:19:39]
+// PAPropertyPanels.initPanels (AN) elapsed time: 1s
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "AN (8) ; OUT ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 1, "true", 4, true); // A - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 4889.273 ; gain = 1198.895 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// [Engine Memory]: 4,756 MB (+8743kb) [00:19:41]
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 190 MB (+6306kb) [00:19:42]
+// [GUI Memory]: 201 MB (+993kb) [00:19:42]
+// TclEventType: TIMING_SUMMARY_UPDATED
+dismissDialog("Open Implemented Design"); // bA
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Methodology Violations"); // aV
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.runs/impl_1/ElectronicClock.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 13 seconds
+selectCodeEditor("electronic_clock.v", 322, 650); // be
+// Elapsed time: 45 seconds
+selectCodeEditor("electronic_clock.v", 158, 275); // be
+selectCodeEditor("electronic_clock.v", 654, 703); // be
+selectCodeEditor("electronic_clock.v", 186, 669); // be
+selectCodeEditor("electronic_clock.v", 105, 420); // be
+selectCodeEditor("electronic_clock.v", 123, 651); // be
+selectCodeEditor("electronic_clock.v", 207, 437); // be
+// Elapsed time: 29 seconds
+selectCodeEditor("electronic_clock.v", 301, 387); // be
+selectCodeEditor("electronic_clock.v", 531, 368); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 26, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+selectCodeEditor("electronic_clock.v", 564, 566); // be
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1160] Copying file D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.runs/synth_1/ElectronicClock.dcp to D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.srcs/utils_1/imports/synth_1 and adding it to utils fileset 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Mar 30 13:26:19 2023] Launched synth_1... Run output will be captured here: D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.runs/synth_1/runme.log [Thu Mar 30 13:26:19 2023] Launched impl_1... Run output will be captured here: D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 14 seconds
+selectCodeEditor("electronic_clock.v", 355, 147); // be
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-165] Too many positional options when parsing 'Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.srcs/utils_1/imports/synth_1/ElectronicClock.dcp', please type 'read_checkpoint -help' for usage info.. ]", 4, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-165] Too many positional options when parsing 'Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.srcs/utils_1/imports/synth_1/ElectronicClock.dcp', please type 'read_checkpoint -help' for usage info.. ]", 4, false, false, false, false, false, true); // ah - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true, false, false, false, false, true); // n - Double Click - Node
+// Run Command: RDIResourceCommand.RDICommands_COPY
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources, utils_1]", 24, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources, utils_1]", 24, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources, utils_1, Design Checkpoint, ElectronicClock.dcp]", 26, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources, utils_1, Design Checkpoint, ElectronicClock.dcp]", 26, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ar
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.srcs/utils_1/imports/synth_1/ElectronicClock.dcp}}] -no_script -reset -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset utils_1 {{D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.srcs/utils_1/imports/synth_1/ElectronicClock.dcp}} 
+// Tcl Message: file delete -force {D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.srcs/utils_1/imports/synth_1/ElectronicClock.dcp} 
+// [GUI Memory]: 216 MB (+5201kb) [00:22:17]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 26, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Mar 30 13:27:06 2023] Launched synth_1... Run output will be captured here: D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.runs/synth_1/runme.log [Thu Mar 30 13:27:07 2023] Launched impl_1... Run output will be captured here: D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+selectCodeEditor("electronic_clock.v", 66, 795); // be
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 95 seconds
+selectCodeEditor("electronic_clock.v", 318, 464); // be
+selectCodeEditor("electronic_clock.v", 319, 455); // be
+selectCodeEditor("electronic_clock.v", 320, 454, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "electronic_clock.v", 'c'); // be
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,786 MB. GUI used memory: 151 MB. Current time: 3/30/23, 1:54:23 PM CST
+// Elapsed time: 2664 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+// Elapsed time: 19 seconds
+selectCodeEditor("electronic_clock.v", 335, 261); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 29, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Documents/Repositories/My Repositories/Digital-Logic-and-Computer-Organization-Experiments/lab04_2/lab04_2.runs/impl_1/ElectronicClock.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 29 seconds
+selectCodeEditor("electronic_clock.v", 418, 406); // be
+selectCodeEditor("electronic_clock.v", 562, 673); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("electronic_clock.v", 524, 671); // be
+// Elapsed time: 26 seconds
+selectCodeEditor("electronic_clock.v", 539, 411); // be

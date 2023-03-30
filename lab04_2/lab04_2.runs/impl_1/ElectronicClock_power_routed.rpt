@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date             : Wed Mar 29 18:50:17 2023
+| Date             : Thu Mar 30 13:30:18 2023
 | Host             : DESKTOP-RSF5MMH running 64-bit major release  (build 9200)
 | Command          : report_power -file ElectronicClock_power_routed.rpt -pb ElectronicClock_power_summary_routed.pb -rpx ElectronicClock_power_routed.rpx
 | Design           : ElectronicClock
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.518        |
+| Total On-Chip Power (W)  | 1.923        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.429        |
-| Device Static (W)        | 0.089        |
+| Dynamic (W)              | 1.832        |
+| Device Static (W)        | 0.091        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 78.1         |
-| Junction Temperature (C) | 31.9         |
+| Max Ambient (C)          | 76.2         |
+| Junction Temperature (C) | 33.8         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.655 |     7552 |       --- |             --- |
-|   LUT as Logic |     0.523 |     5011 |     63400 |            7.90 |
-|   CARRY4       |     0.069 |     1245 |     15850 |            7.85 |
-|   Register     |     0.057 |      274 |    126800 |            0.22 |
+| Slice Logic    |     0.868 |     5035 |       --- |             --- |
+|   LUT as Logic |     0.712 |     3502 |     63400 |            5.52 |
+|   CARRY4       |     0.093 |      870 |     15850 |            5.49 |
+|   Register     |     0.057 |      281 |    126800 |            0.22 |
 |   BUFG         |     0.006 |        5 |        32 |           15.63 |
 |   Others       |     0.000 |       23 |       --- |             --- |
-|   F7/F8 Muxes  |     0.000 |        1 |     63400 |           <0.01 |
-| Signals        |     0.754 |     6731 |       --- |             --- |
-| I/O            |     0.020 |       37 |       210 |           17.62 |
-| Static Power   |     0.089 |          |           |                 |
-| Total          |     1.518 |          |           |                 |
+|   F7/F8 Muxes  |     0.000 |        3 |     63400 |           <0.01 |
+| Signals        |     0.940 |     4630 |       --- |             --- |
+| I/O            |     0.024 |       38 |       210 |           18.10 |
+| Static Power   |     0.091 |          |           |                 |
+| Total          |     1.923 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     1.448 |       1.429 |      0.019 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     1.853 |       1.832 |      0.021 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.019 |       0.000 |      0.019 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -139,16 +139,17 @@ Table of Contents
 +---------------------+-----------+
 | Name                | Power (W) |
 +---------------------+-----------+
-| ElectronicClock     |     1.429 |
-|   debounce5         |     0.313 |
-|   divider1          |     0.133 |
-|   divider2          |     0.149 |
+| ElectronicClock     |     1.832 |
+|   bcd7seg7          |     0.009 |
+|   debounce5         |     0.264 |
+|   divider1          |     0.151 |
+|   divider2          |     0.130 |
 |   divider3          |     0.132 |
-|   hour_counter      |     0.043 |
+|   hour_counter      |     0.099 |
 |   minute_counter    |     0.038 |
-|   second_counter    |     0.037 |
-|   selecSeg          |     0.450 |
-|   stopwatch_counter |     0.041 |
+|   second_counter    |     0.045 |
+|   selecSeg          |     0.435 |
+|   stopwatch_counter |     0.132 |
 +---------------------+-----------+
 
 
