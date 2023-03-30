@@ -1,0 +1,15 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+D:/Documents/Digital_Logic_Experiments/lab05/lab05.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1679490706,verilog,,D:/Documents/Digital_Logic_Experiments/lab05/lab05.srcs/sources_1/new/bcd7seg.v,,blk_mem_gen_0,,,,,,,,
+D:/Documents/Digital_Logic_Experiments/lab05/lab05.srcs/sim_1/new/lab05_test.v,1679496380,verilog,,,,Lab05_tb,,,,,,,,
+D:/Documents/Digital_Logic_Experiments/lab05/lab05.srcs/sources_1/new/lab05.v,1679495358,verilog,,D:/Documents/Digital_Logic_Experiments/lab05/lab05.srcs/sources_1/new/regfile.v,,Lab05,,,,,,,,
+D:/Documents/Digital_Logic_Experiments/lab05/lab05.srcs/sources_1/new/regfile.v,1679482302,verilog,,D:/Documents/Digital_Logic_Experiments/lab05/lab05.srcs/sources_1/new/selectLed.v,,Regfile,,,,,,,,
+D:/Documents/Digital_Logic_Experiments/lab06/lab06.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
+D:/Documents/Digital_Logic_Experiments/lab06/lab06.srcs/sim_1/new/lab06_tb.v,1680092686,verilog,,,,Lab06_tb,,,,,,,,
+D:/Documents/Digital_Logic_Experiments/lab06/lab06.srcs/sources_1/new/bcd7seg.v,1680091032,verilog,,D:/Documents/Digital_Logic_Experiments/lab06/lab06.srcs/sources_1/new/divider.v,,Bcd7seg,,,,,,,,
+D:/Documents/Digital_Logic_Experiments/lab06/lab06.srcs/sources_1/new/debounce.v,1680054390,verilog,,D:/Documents/Digital_Logic_Experiments/lab06/lab06.srcs/sources_1/new/divider.v,,Debounce5,,,,,,,,
+D:/Documents/Digital_Logic_Experiments/lab06/lab06.srcs/sources_1/new/divider.v,1679485850,verilog,,D:/Documents/Digital_Logic_Experiments/lab06/lab06.srcs/sources_1/new/lab06.v,,Divider,,,,,,,,
+D:/Documents/Digital_Logic_Experiments/lab06/lab06.srcs/sources_1/new/lab06.v,1680092396,verilog,,D:/Documents/Digital_Logic_Experiments/lab06/lab06.srcs/sources_1/new/selectLed.v,,Lab06,,,,,,,,
+D:/Documents/Digital_Logic_Experiments/lab06/lab06.srcs/sources_1/new/selectLed.v,1679539562,verilog,,D:/Documents/Digital_Logic_Experiments/lab06/lab06.srcs/sim_1/new/lab06_tb.v,,SelectLed,,,,,,,,

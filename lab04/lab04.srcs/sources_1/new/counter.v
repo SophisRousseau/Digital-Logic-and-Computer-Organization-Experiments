@@ -19,7 +19,6 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module Counter(
 	input  clk,
 	input  en,
@@ -29,20 +28,26 @@ module Counter(
 	output reg rco
 	);
     // add your code here
-    // always块如果是用非阻塞(<=)是并行执行的；如果是用阻塞(=)是顺序执行的
     
-    always @(posedge clk or negedge rst) begin
-        if(rst==0) begin
+    reg run=0;
+    
+    always @(posedge clk or posedge rst) begin
+        if(rst==1) begin
             Q<=0;
             rco<=0;
         end
-        else if(en==1) begin
+        else if(run==1) begin
             Q<=(Q+1)%cnt_limit;
             if(Q==cnt_limit-1) rco<=1;
             else rco<=0;
         end
     end
     
+    always @(posedge rst or posedge en) begin
+        if(rst==1) run<=0;
+        else if(en==1) run<=~run;
+    end
+      
 initial begin
     Q=0;
     rco=0;

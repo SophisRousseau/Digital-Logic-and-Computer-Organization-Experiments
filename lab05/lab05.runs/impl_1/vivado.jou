@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Mar 29 19:19:23 2023
+# Process ID: 8680
+# Current directory: D:/Documents/Digital_Logic_Experiments/lab05/lab05.runs/impl_1
+# Command line: vivado.exe -log Lab05.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Lab05.tcl -notrace
+# Log file: D:/Documents/Digital_Logic_Experiments/lab05/lab05.runs/impl_1/Lab05.vdi
+# Journal file: D:/Documents/Digital_Logic_Experiments/lab05/lab05.runs/impl_1\vivado.jou
+# Running On: DESKTOP-RSF5MMH, OS: Windows, CPU Frequency: 1997 MHz, CPU Physical cores: 4, Host memory: 16970 MB
+#-----------------------------------------------------------
+source Lab05.tcl -notrace

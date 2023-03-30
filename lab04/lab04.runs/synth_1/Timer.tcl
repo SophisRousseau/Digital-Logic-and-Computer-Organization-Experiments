@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.runs/synth_1/Timer.tcl"
+  variable script "D:/Documents/Digital_Logic_Experiments/lab04/lab04.runs/synth_1/Timer.tcl"
   variable category "vivado_synth"
 }
 
@@ -71,26 +71,28 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.cache/wt [current_project]
-set_property parent.project_path G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.xpr [current_project]
+set_property webtalk.parent_dir D:/Documents/Digital_Logic_Experiments/lab04/lab04.cache/wt [current_project]
+set_property parent.project_path D:/Documents/Digital_Logic_Experiments/lab04/lab04.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo g:/Root/Core/Digital_Logic_Experiments/lab04/lab04.cache/ip [current_project]
+set_property ip_output_repo d:/Documents/Digital_Logic_Experiments/lab04/lab04.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.srcs/sources_1/new/bcd7seg.v
-  G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.srcs/sources_1/new/counter.v
-  G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.srcs/sources_1/new/divider.v
-  G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.srcs/sources_1/new/select_seg.v
-  G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.srcs/sources_1/new/timer.v
+  D:/Documents/Digital_Logic_Experiments/lab04/lab04.srcs/sources_1/new/bcd7seg.v
+  D:/Documents/Digital_Logic_Experiments/lab04/lab04.srcs/sources_1/new/counter.v
+  D:/Documents/Digital_Logic_Experiments/lab04/lab04.srcs/sources_1/new/debounce.v
+  D:/Documents/Digital_Logic_Experiments/lab04/lab04.srcs/sources_1/new/divider.v
+  D:/Documents/Digital_Logic_Experiments/lab04/lab04.srcs/sources_1/new/select_seg.v
+  D:/Documents/Digital_Logic_Experiments/lab04/lab04.srcs/sources_1/new/timer.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -101,12 +103,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.srcs/constrs_1/new/nexysa7.xdc
-set_property used_in_implementation false [get_files G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.srcs/constrs_1/new/nexysa7.xdc]
+read_xdc D:/Documents/Digital_Logic_Experiments/lab04/lab04.srcs/constrs_1/new/nexysa7.xdc
+set_property used_in_implementation false [get_files D:/Documents/Digital_Logic_Experiments/lab04/lab04.srcs/constrs_1/new/nexysa7.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental G:/Root/Core/Digital_Logic_Experiments/lab04/lab04.srcs/utils_1/imports/synth_1/Counter.dcp
+read_checkpoint -auto_incremental -incremental D:/Documents/Digital_Logic_Experiments/lab04/lab04.srcs/utils_1/imports/synth_1/Timer.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

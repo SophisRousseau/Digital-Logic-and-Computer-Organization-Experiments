@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1678874092" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Counter.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1680043241" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Timer.dcp">
   <File Type="PA-TCL" Name="Timer.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Timer_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Timer_reports.tcl"/>
   <File Type="RDS-RDS" Name="Timer.vds"/>
   <File Type="RDS-UTIL" Name="Timer_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Timer_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Timer.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Timer_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Timer_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/bcd7seg.v">
@@ -16,6 +19,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/counter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/debounce.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -58,13 +68,12 @@
       </FileInfo>
     </File>
     <Config>
-      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/nexysa7.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
     <Filter Type="Utils"/>
-    <File Path="$PSRCDIR/utils_1/imports/synth_1/Counter.dcp">
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/Timer.dcp">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
